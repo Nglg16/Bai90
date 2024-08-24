@@ -7,4 +7,29 @@ html{
 }
 body{
     font-size: 1.6rem;
+    font-family: "Sen", sans-serif;
+
+}
+
+.main-content{
+    width: 1170px;
+    max-width: calc(100% - 50px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header .body{
+    display: flex;
+}
+
+.nav{
+    margin-left: auto;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
 }
