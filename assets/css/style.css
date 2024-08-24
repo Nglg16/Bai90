@@ -22,8 +22,33 @@ a{
     text-decoration: none;
 }
 
+.btn{
+font-size: 1.6rem;
+display: inline-block;
+min-width: 110px;
+padding: 0 1px;
+line-height: 40px;
+text-align: center;
+font-weight: 500;
+border-radius: 24.5px;
+
+color: #FFFFFF;
+background-color: #070500;
+
+}
+.header{
+    background: #FFFCF4;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -22px;
+}
+
 .header .body{
     display: flex;
+    align-items: center;
+    padding: 30px 0 8px;
 }
 
 .nav{
@@ -57,4 +82,8 @@ padding: 8px 20px;
     height: 2px;
     border-radius: 1px;
     background: #070500;
+}
+
+.header .action{
+    margin-left: 49px;
 }
