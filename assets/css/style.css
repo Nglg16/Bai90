@@ -19,7 +19,43 @@ body{
 
 /* =================Common================= */
 
+/* Cai nao dai qua se thanh dau... o cuoi */
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
+/* Dai qua se thanh dau... o dong thu 2 */
+.line-clamp.line-2{
+    --line-clamp: 2;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    font-size: 1.6rem;
+    display: inline-block;
+    min-width: 118px;
+    padding: 0 16px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 999px;
+    
+    color: #FFFFFF;
+    background-color: #070500;
+    
+    }
+    
+    .btn:hover{
+        opacity: 0.9;
+    }
+
+/* =================Header================= */
 .main-content{
     width: 1170px;
     max-width: calc(100% - 50px);
@@ -27,9 +63,6 @@ body{
     margin-right: auto;
 }
 
-a{
-    text-decoration: none;
-}
 
 .heading-lv2{
     font-family: var(--font-heading);
@@ -39,24 +72,6 @@ line-height: 48px;
 letter-spacing: -0.02em;
 }
 
-.btn{
-font-size: 1.6rem;
-display: inline-block;
-min-width: 118px;
-padding: 0 16px;
-line-height: 50px;
-text-align: center;
-font-weight: 600;
-border-radius: 999px;
-
-color: #FFFFFF;
-background-color: #070500;
-
-}
-
-.btn:hover{
-    opacity: 0.9;
-}
 .header{
     background: #FFFCF4;
 }
@@ -338,6 +353,8 @@ color: #5F5B53;
     
 }
 .popular .course-item{
+    /* tức trọng số 3 it = nhau ,kể cả khi có 1 cái nhiều chữ hơn vẫn giữ độ rộng = nhau */
+    flex: 1;
     border-radius: 12px;
     background: #fff;
     border: 1px solid #E2DFDA
