@@ -427,12 +427,19 @@ color: #171100;
     margin-top: 135px;
    background: #2E2100;
    padding: 96px 0;
-    
+
 }
 
- .feedback-item{
-display: flex;
+.feedback-list{
+    display: flex;
+    overflow: hidden;
 }
+  
+  .feedback-item {
+   flex-shrink: 0;
+    display: flex;
+    max-width: 100%;
+  }
 
  .feedback-item .avt{
     width: 72px;
@@ -464,17 +471,18 @@ color: #BFBCB2;
  gap: 6px;
 }
 
-.feedback-item .dot{
+.feedback-item .dot {
+    height: 6px;
     width: 6px;
-height: 6px;
-background: #634700;
-border-radius: 50%;
-}
-
-.feedback-item .dot:hover{
-    background: var(--primary-color);
+    border-radius: 50%;
+    background: #634700;
     cursor: pointer;
-}
+  }
+  
+  .feedback-item .dot.active {
+    background: var(--primary-color);
+    cursor: default;
+  }
 
 .feedback-item .content{
     width: 66%;
