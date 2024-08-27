@@ -632,7 +632,7 @@ margin: 16px auto 0;
   }
 
   .blogs .item{
-    width: 33.33%;
+    width: calc(33.33% - 20px);
     border-radius: 16px;
     background: #fff;
   }
@@ -694,9 +694,33 @@ background: #E2DFDA;
   }
 
   .blogs .item .btn{
-    min-width: 118px;
+    font-size: 1.4rem;
+    /* Thay chu nho hon thi la font-size chu ko phai max-with */
   }
 
   .blogs .item .btn:hover{
     background: var(--primary-color);
+  }
+
+  .blogs .dots{
+    display: flex;
+    gap: 6px;
+   justify-content: center;
+    margin-top: 38px;
+  }
+
+  .blogs .dot{
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5F5B53;
+    cursor: pointer;
+
+  }
+
+  .blogs .dot.active{
+           background: var(--primary-color);
+           /* Cho nao active r thi ko can hinh ban tay */
+           cursor: default;
   }
