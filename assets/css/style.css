@@ -363,6 +363,7 @@ color: #5F5B53;
 
 .popular .course-item:hover{
     border-radius: 12px;
+    /* Khi hover vao border se bien mat */
     border: 1px solid transparent;
     background: #fff;
     box-shadow: 0px 18px 36px 0px #0000000D;
@@ -487,6 +488,7 @@ color: #BFBCB2;
 .feedback-item .content{
     width: 66%;
     margin-left: auto;
+       /* ngoai ra co the dung line-height */
     margin-top: 5px;
 }
 
@@ -535,6 +537,7 @@ margin-top: -5px;
 }
 
 .features .desc{
+    /* ngoai ra co the dung line-height */
     margin-top: -10px;
 font-size: 1.6rem;
 line-height: 28px;
@@ -576,6 +579,7 @@ color: #5F5B53;
 }
 
 .features-2 .desc{
+       /* ngoai ra co the dung line-height */
     margin-top: -1rem;
 font-size: 1.6rem;
 line-height: 28px;
@@ -588,3 +592,111 @@ line-height: 28px;
      height: 50px;
      background: var(--primary-color);
 }
+
+/* ================Blogs================== */
+
+.blogs{
+    margin-top: 135px;
+    padding: 96px 0;
+  background: #FFFCF4;
+}
+
+.blogs .blog-top{
+ text-align: center;
+}
+
+.blogs .heading-lv2{
+    font-family: var(--font-heading);
+font-size: 3.8rem;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: -0.02em;
+color: #130606;
+
+}
+
+.blogs .desc{
+font-size: 1.6rem;
+line-height: 28px;
+color: #696262;
+width: 448px;
+height: 56px;
+/* Meo can giua */
+margin: 16px auto 0;
+}
+
+  .blogs .blog-list{
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+  }
+
+  .blogs .item{
+    width: 33.33%;
+    border-radius: 16px;
+    background: #fff;
+  }
+
+  .blogs .item:hover{
+    box-shadow: 0px 16px 32px 0px #0000000D;
+  }
+
+  .blogs .item .thumb{
+     width: 100%;
+     height: 250px;
+     object-fit: cover;
+     border-radius: 16px 16px 0px 0px;
+  }
+  .blogs .item .info{
+    padding: 20px 20px 28px;
+  }
+
+  .blogs .item .date{
+    position: relative;
+    padding-bottom: 12px;
+    display: inline-flex;
+    align-items: center;
+font-size: 1.4rem;
+line-height: 26px;
+color: #5F5B53;
+  }
+
+  .blogs .item .date::before{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    margin-right: 5px;
+  }
+
+  .blogs .item .date::after{
+    position: absolute;
+    left: 0;
+    bottom:  0;
+    content: "";
+    display: inline-block;
+    /* Muon do rong cua thanh nay luon lech sang ben phai 27px de khi chu ben tren dai thi se dai theo*/
+     /* Phải dùng cùng inline-flex de box cha luôn chứa vừa nội dung của nó ko thì sẽ bị tràn*/
+    right: -27px;
+height: 1px;
+border-radius: 0.5px 0px 0px 0px;
+background: #E2DFDA;
+  }
+
+  .blogs .item .title{
+    margin-top: 12px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 28px;
+    
+  }
+
+  .blogs .item .btn{
+    min-width: 118px;
+  }
+
+  .blogs .item .btn:hover{
+    background: var(--primary-color);
+  }
