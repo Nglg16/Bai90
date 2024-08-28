@@ -724,3 +724,101 @@ background: #E2DFDA;
            /* Cho nao active r thi ko can hinh ban tay */
            cursor: default;
   }
+
+  /* ===============================Footer=========================================== */
+
+  .footer{
+    background: #2E2100;
+    padding: 96px 135px 0;
+
+  }
+
+  .footer .row{
+    padding-bottom: 28px;
+    border-bottom: 1px solid  #595252;
+    display: flex;
+  }
+
+  .footer .row .column{
+   width: 21.6%;
+    
+  } 
+
+  .footer .row .column:first-child{
+    width: 35%;
+
+  }
+
+.footer .desc{
+    margin-top: 18px;
+    max-width: 267px;
+font-size: 1.4rem;
+line-height: 26px;
+color: #BFBCB2;
+  }
+
+  .footer .socials{
+    display: flex;
+    margin-top: 18px;
+    gap: 18px;
+  }
+
+  .footer .title{
+    padding-bottom: 14px;
+    /* padding right de keo dai thanh , h3 la 82 con thanh la 130 nen lay 130-82=48 , phai co inline-block */
+    padding-right: 48px;
+    border-bottom: 1px solid  #59554B;
+    display: inline-block;
+font-size: 1.6rem;
+font-weight: 600;
+line-height: 28px;
+color: #FFFFFF;
+
+  }
+
+  .footer .list{
+    margin-top: 16px;
+  }
+
+.footer .list li{
+    list-style: none;
+    margin-left: -38px;
+}
+
+.footer .list a{
+    display: inline-block;
+    margin-bottom: 12px;
+font-size: 1.4rem;
+line-height: 26px;
+color: #BFBCB2;
+}
+
+.footer .list li:last-child a{
+    margin-bottom: 0;
+}
+
+.footer .column:last-child a{
+    width: 240px;
+}
+
+.footer .list strong{
+font-size: 1.4rem;
+font-weight: 600;
+line-height: 26px;
+color: #FFFFFF;
+}
+
+.footer .coyright{
+   padding: 20px 0;
+font-size: 1.4rem;
+line-height: 26px;
+text-align: center;
+color: #807D74;
+
+}
+
+.footer .column:nth-child(2),
+.footer .column:nth-child(3),
+.footer .column:nth-child(4){
+   margin-top: -18px;
+}
